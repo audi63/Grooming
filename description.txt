@@ -1,0 +1,140 @@
+### Description du Projet : Plugin de Gestion pour Salons de Toilettage
+
+Le plugin de gestion pour salons de toilettage est une solution complète conçue spécifiquement pour répondre aux besoins des salons de toilettage pour animaux de compagnie. Avec une approche modulaire, ce plugin devra offrir une gamme étendue de fonctionnalités pour simplifier la gestion quotidienne des salons de toilettage et améliorer l'expérience client.
+
+### Fonctionnalités Principales :
+
+0. Gestion du salon 
+Gestion des informations, nom, adresse etc
+Gestion des horaires de travail et des disponibilités
+Gestion des modules 
+Gestion des messages 
+Gestion des intégrations
+
+1. **Gestion des Rendez-vous** :
+   - Prise de rendez-vous en ligne avec synchronisation bidirectionnelle avec Google Calendar.
+   - Paramétrage des types de rappels (mail, SMS) et leur fréquence.
+   - Programmation des rappels automatiques pour les rendez-vous à prévoir selon la fréquence de toilettage de la race.
+
+2. **Intégration avec WooCommerce** :
+   - Vente de produits de toilettage via WooCommerce, avec suivi des stocks intégré.
+   - Certains produits ajoutés dans Woocommerce ne sont pas destinés à la vente et doivent rester masqués, mais ils sont présents pour être inclus dans la gestion des stocks afin d'etre comptabilises lors de l'inventaire. 
+
+3. **Gestion des Clients et des Animaux** :
+   - Création de profils clients et d'animaux avec des champs personnalisés.
+   - Ajout de notes privées sur les clients (exemple : A 2 enfants, aime les poissons rouges), notes sur les animaux exemple : chien sensible des oreilles, ou chat très peureux, peu devenir agressif) ,  suivi des appels émis et reçus, suivi des achats dans la boutique, suivi des rendez-vous 
+A prévoir également, un module de gestion des mauvais clients, ceux qui ne viennent pas à leur rendez-vous et qui ne préviennent pas. Un système qui augmente la quantité de messages envoyés pour leur rappeler leur rendez-vous ou qui les classifie en mauvais client, voir bannissement ou blocage leur rendant impossible la prise de rendez-vous ou de commande.
+1 client peut avoir plusieurs animaux 
+1 animal peut avoir plusieurs clients en tant que propriétaire (si le client et sa femme ont un compte différent ? C'est un choux technique à réfléchir 
+Il faut également trouver une solution pour la création de compte client ( compte utilisateur WordPress) qui ne possède pas d'adresse mail. ( Soit réussir à contourner le blocage de WordPress, soit proposer au client une adresse mail du salon de toilettage comme nom_client1@aux-quatre-pattes.fr)
+4. **Gestion des Employés** : inutile dans mon cas, mais c'est un module qui devra voir le jour plus tard car très certainement utile pour d'autres salon de toilettage.
+   - Assignation des employés aux rendez-vous et suivi des performances individuelles.
+   - Gestion des horaires de travail et des disponibilités.
+
+5. **Communication et Marketing** :
+   - Intégration avec les réseaux sociaux pour partager des avis, des expériences et des promotions.
+   - Mise en place de jeux concours pour stimuler l'engagement et la fidélité des clients.
+   - Publication automatique d'articles avec l'IA, programmables, adaptés aux races et espèces selon la saison.
+
+6. **Automatisation et Personnalisation** :
+   - Automatisation des tâches récurrentes telles que les rappels de rendez-vous.
+   - Personnalisation des rappels et des communications en fonction des préférences des clients.
+
+### Fonctionnalités Supplémentaires :
+
+7. **Gestion du Chiffre d'Affaires** :
+   - Tableau de bord graphique affichant le chiffre d'affaires réalisé, le chiffre réalisable, les réservations en attente et les réservations à venir. Faire d'autres propositions d'informations clés à afficher 
+
+### Structure Modulaire :
+Structure mvc
+Le plugin est conçu avec une architecture modulaire, ce qui permet aux propriétaires de salons de toilettage de sélectionner et d'activer uniquement les fonctionnalités dont ils ont besoin. Chaque module peut être activé, désactivé ou configuré individuellement, offrant ainsi une flexibilité maximale pour adapter le plugin aux besoins spécifiques de chaque salon. Il faudra déterminer les fonctionnalités de base au préalable, et toutes les autres devront être modulaires, installa les.
+
+
+Certains modules ou certaines fonctionnalités d'un module seront certainement disponibles à l'achat.
+### Conclusion :
+
+Le plugin de gestion pour salons de toilettage doit être une solution complète et polyvalente pour simplifier la gestion quotidienne des salons tout en améliorant l'expérience client. En intégrant des fonctionnalités essentielles telles que la prise de rendez-vous, la gestion des stocks et la communication marketing, ainsi que des fonctionnalités avancées telles que la publication automatique d'articles avec l'IA et la gestion du chiffre d'affaires, ce plugin aide les salons de toilettage à prospérer dans un marché concurrentiel tout en offrant un service exceptionnel à leurs clients et à leurs animaux de compagnie.
+ChatGPT
+Plan de Développement pour le Plugin de Gestion des Salons de Toilettage
+1. Structure du Plugin
+Le plugin sera développé en suivant une structure MVC (Modèle-Vue-Contrôleur) pour une meilleure organisation du code et une facilité d'extension future. La structure modulaire permettra d'activer ou de désactiver des fonctionnalités selon les besoins du salon de toilettage.
+
+2. Fonctionnalités de Base
+2.1 Gestion du Salon
+Informations sur le salon : Nom, adresse, etc.
+Gestion des horaires de travail et des disponibilités.
+Gestion des modules actifs.
+Gestion des messages internes et des intégrations avec d'autres systèmes.
+2.2 Gestion des Rendez-vous
+Prise de rendez-vous en ligne :
+Interface de réservation pour les clients.
+Synchronisation bidirectionnelle avec Google Calendar.
+Rappels de rendez-vous :
+Paramétrage des types de rappels (email, SMS) et de leur fréquence.
+Programmation automatique des rappels en fonction de la fréquence de toilettage par race.
+2.3 Intégration avec WooCommerce
+Vente de produits de toilettage via WooCommerce.
+Gestion des stocks :
+Produits visibles pour la vente.
+Produits masqués pour la gestion des stocks (non destinés à la vente).
+2.4 Gestion des Clients et des Animaux
+Profils clients et animaux :
+Champs personnalisés pour les clients et les animaux.
+Notes privées sur les clients et les animaux.
+Suivi des appels, des achats et des rendez-vous.
+Gestion des mauvais clients :
+Système de classification des clients (ex. mauvais payeurs).
+Augmentation de la fréquence des rappels pour les mauvais clients.
+Blocage de prise de rendez-vous pour les clients bannis.
+Gestion des comptes clients sans adresse mail :
+Génération d'adresses email alternatives (ex. nom_client1@aux-quatre-pattes.fr).
+2.5 Communication et Marketing
+Réseaux sociaux :
+Partage d'avis et de promotions.
+Gestion de jeux concours.
+Publication automatique d'articles :
+Articles programmables et adaptés aux races et espèces selon la saison.
+2.6 Automatisation et Personnalisation
+Automatisation des rappels de rendez-vous.
+Personnalisation des communications clients.
+2.7 Gestion du Chiffre d'Affaires
+Tableau de bord graphique :
+Chiffre d'affaires réalisé.
+Chiffre d'affaires réalisable.
+Réservations en attente et à venir.
+Autres indicateurs clés (à déterminer).
+3. Fonctionnalités Avancées et Modules Supplémentaires
+3.1 Gestion des Employés (Module Futur)
+Assignation des employés aux rendez-vous.
+Suivi des performances individuelles.
+Gestion des horaires de travail et des disponibilités.
+3.2 Autres Modules à Venir
+Modules additionnels payants pour des fonctionnalités spécifiques.
+4. Développement Technique
+4.1 Environnement et Outils
+Langage : PHP (version compatible avec WordPress)
+Framework : Utilisation de Bootstrap pour un style sobre et moderne.
+Plugins : Intégration avec JetEngine, JetFormBuilder, WooCommerce.
+Base de données : Gestion avec les tables WordPress personnalisées.
+4.2 Structuration du Code
+Classes et Objets : Adoption de la programmation orientée objet.
+MVC : Structure MVC pour une séparation claire des préoccupations.
+4.3 Sécurité et Performance
+Validation des données : Utilisation de fonctions de validation et de sanitation.
+Optimisation : Code optimisé pour des performances rapides.
+4.4 Tests et Déploiement
+Tests unitaires : Mise en place de tests pour chaque module.
+Déploiement : Procédures de déploiement et mises à jour régulières.
+5. Documentation et Support
+Documentation Utilisateur : Guides et manuels pour les utilisateurs finaux.
+Documentation Développeur : Documentation technique pour faciliter l'extension et la maintenance du plugin.
+Conclusion
+Le plugin de gestion pour salons de toilettage sera une solution complète et modulaire, adaptée aux besoins spécifiques des salons de toilettage. En intégrant des fonctionnalités essentielles et avancées, il permettra une gestion efficace et améliorera l'expérience des clients et de leurs animaux. Le développement structuré et orienté objet garantira une maintenance facile et une extensibilité future.
+
+Étapes Suivantes
+Validation des fonctionnalités de base avec le client.
+Développement de la structure de base et des modules essentiels.
+Phase de test et débogage.
+Déploiement initial et collecte des retours utilisateurs.
+Développement des modules avancés et options supplémentaires.
+Pour commencer le développement, il est crucial de valider la liste des fonctionnalités et d'établir une feuille de route détaillée.
